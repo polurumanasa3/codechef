@@ -11,17 +11,19 @@ class Codechef
 		for(int i=0;i<n;i++)
 		{
 		    int a=s.nextInt();
-		    int b=s.nextInt();
-		    if(a>=b)
+		    if(a<3)
 		    {
-		        System.out.println("Yes");
+		        System.out.println("LIGHT");
 		    }
-		    else
+		    else if(a>=3 && a<7)
 		    {
-		        System.out.println("No");
+		        System.out.println("MODERATE");
 		    }
-		    	// your code goes here
+		    else if(a>=7)
+		    {
+		        System.out.println("HEAVY");
+		    }
+		}	// your code goes here
 
 	}
-}
 }
